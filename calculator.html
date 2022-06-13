@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* body{
+            display: flex;
+            justify-content: center; 
+             align-items: center;
+        } */
+        .calculator{
+            background-color: rgb(244, 163, 163);
+            border: 2px solid black;
+            height: 24rem;
+            width: 20rem;
+            display: grid;
+            justify-content: center;
+            /* align-items: center; */
+            margin-top: 13rem;
+            margin-left: 37rem;
+            grid-template-columns: repeat(4,3.5rem);
+            grid-template-rows: repeat(6,3.5rem);
+            border-radius: 13px;
+            box-shadow: 5px 5px 5px 0px rgb(84, 81, 81);
+            
+        }
+
+        .btn{
+            margin-top: 2.2rem;
+            height: 3rem;
+            width: 3rem;
+            border: 2px solid red;
+            background-color: rgb(237, 240, 195);
+            border-radius: 10px;
+            justify-content: center;
+            box-shadow: 1px 1px 0px 0px rgb(84, 81, 81);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .btn:hover{
+            background-color: aliceblue;
+            font-weight: bolder;
+            transform: scale(1.1);
+        }
+
+        .screen{
+            height: 0.7rem;
+            border: 2px solid red;
+            background-color: rgb(216, 221, 222);
+            border-radius: 10px;
+            margin-top: 2.2rem;
+            /* margin-bottom: 8px; */
+            padding: 1rem;
+            margin-right: 0.4rem;
+            box-shadow: 1px 1px 0px 0px rgb(84, 81, 81);
+           
+        }
+
+        .screen:first-child{
+            grid-column: 1 / span 4;
+        }
+
+        /* .btn:nth-child(16){
+            grid-row: 1 / span 2;
+        } */
+
+        .heading{
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+            /* margin: 3rem 3rem;
+            padding: 1rem; */
+            text-align: center;
+            font-size: 2em;
+            border: 4px solid black;
+            background-color: rgb(169, 229, 255);
+            border-radius: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            box-shadow:  6px -6px 6px rgb(80, 79, 79);
+        }
+ 
+        
+        
+
+    </style>
+</head>
+<body>
+
+    <header class="heading">CALCULATOR</header>
+
+    <div class="calculator">   
+        <div class="screen"></div>
+        <!-- <div class="screen"></div>
+        <div class="screen"></div>
+        <div class="screen"></div> -->
+        <button class="btn" id="sqrt">sqrt()</button>
+        <button class="btn" id="pow">pow()</button>
+        <button class="btn" id="divide">/</button>
+        <button class="btn" id="power">AC</button>
+        <button class="btn" id="seven">7</button>
+        <button class="btn" id="eight">8</button>
+        <button class="btn" id="nine">9</button>
+        <button class="btn" id="product">*</button>
+        <button class="btn" id="four">4</button>
+        <button class="btn" id="five">5</button>
+        <button class="btn" id="six">6</button>
+        <button class="btn" id="minus">-</button>
+        <button class="btn" id="one">1</button>
+        <button class="btn" id="two">2</button>
+        <button class="btn" id="three">3</button>
+        <button class="btn" id="plus">+</button>
+        <button class="btn" id="zero">0</button>
+        <button class="btn" id="decimal">.</button>
+        <button class="btn" id="equal">=</button>
+        <!-- <button class="btn" id="plus">+</button> -->
+    </div>
+</body>
+</html>
